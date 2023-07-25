@@ -1,0 +1,86 @@
+:root {
+  --primary: #2aa4f5;
+  --contrast: #1b2fde;
+  --secondary: #1b96de;
+
+  --ft-color: aliceblue;
+  --ft-sh: rgb(0, 0, 0, 0.55);
+  --soft-sh: rgb(0, 0, 0, 0.1);
+  --stroke-sh: rgb(0, 0, 0, 0.75);
+
+  --danger: tomato;
+
+  --ft-principal: "Poppins", sans-serif;
+  --ft-secondary: "Nunito", sans-serif;
+
+  --box-sh: -7px 0 10px var(--soft-sh);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--ft-principal);
+}
+
+html,
+body {
+  position: relative;
+  overflow-x: hidden;
+  background-color: var(--ft-color);
+  z-index: 1000;
+}
+
+
+table thead th {
+  text-transform: uppercase;
+}
+
+select,
+input {
+  padding: 0.25rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: var(--ft-color);
+}
+
+button {
+  padding: 0.25rem 0.5rem;
+  border-radius: 25rem;
+  border: 1px solid var(--soft-sh);
+  box-shadow: 0 2px rgb(0, 0, 0, 0.5);
+  background: var(--ft-color);
+}
+
+.fields {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fields .alerts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.fields .alerts .alert {
+  font-size: 0.85rem;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1rem 2rem;
+  background-color: #2aa4f5;
+  background: linear-gradient(to top, rgb(0, 0, 0, .05), transparent);
+  box-shadow: var(--box-sh), inset -4px -4px rgb(0, 0, 0, .05);
+  border-radius: 10rem;
+  padding: 1rem;
+  margin: 1px solid black;
+}
