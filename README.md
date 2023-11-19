@@ -3,6 +3,10 @@
 ## Implementación
 ### Node 18.x.x en adelante
 
-cd reactproject,
-pnpm install,
+```bash
+cd ./apc-now
+pnpm install
 pnpm dev
+```
+
+¡Enhorabuena!
